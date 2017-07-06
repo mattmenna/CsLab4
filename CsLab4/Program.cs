@@ -17,22 +17,18 @@ namespace CsLab4
         {
             Boolean cont = true;
 
-            long output = 0;
-           // while (cont)
-            //{
+            long output = 1;
+            while (cont)
+            {
                 Console.WriteLine("Calculate the factorial of a number!");
                 int factNum = Convert.ToInt32(Console.ReadLine());
 
-                for (int i = 0; i < factNum; i++){
-                    //output = i * output;
-
-                    Console.WriteLine(i);
+                for (int i = 1; i <= factNum; i++)
+                {
+                    output = i * output;
+                    Console.WriteLine(output);
                 }
-                Console.WriteLine("Continue?: y or n");
-            Console.ReadKey();
-
-              //  if (Console.Read().Equals("n")) { break; }
-            //}
+            }
         }
     }
 }
